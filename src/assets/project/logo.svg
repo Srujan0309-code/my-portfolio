@@ -1,0 +1,25 @@
+<!-- file: logo-sp-badge-yellow-black.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 200 200">
+  <title>SP Badge Logo - Yellow &amp; Black</title>
+  <defs>
+    <style>
+      :root{
+        --bg:#000000;      /* black circle background */
+        --accent:#FFD700;  /* golden yellow for 'p' */
+        --accent2:#ffffff; /* white for 's' */
+      }
+      .bg{ fill: var(--bg); }
+      .s{ fill: var(--accent2); font-family: "Segoe UI", Roboto, Arial, sans-serif; font-weight:900; font-size:110px; }
+      .p{ fill: var(--accent); font-family: "Segoe UI", Roboto, Arial, sans-serif; font-weight:900; font-size:110px; }
+    </style>
+  </defs>
+
+  <!-- circular background -->
+  <circle class="bg" cx="100" cy="100" r="98"></circle>
+
+  <!-- overlapping letters -->
+  <g transform="translate(0,6)">
+    <text class="s" x="28" y="120">s</text>
+    <text class="p" x="88" y="120">p</text>
+  </g>
+</svg>
