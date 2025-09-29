@@ -55,7 +55,7 @@ h2::selection {
   cursor: pointer;
 }
 
-.toggle-icons > img {
+.toggle-icons>img {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   width: 30px;
 }
@@ -64,11 +64,11 @@ h2::selection {
   transform: rotate(10deg);
 }
 
-#switch:checked + .toggle-icons .moon {
+#switch:checked+.toggle-icons .moon {
   transform: rotate(250deg);
 }
 
-#switch:checked + .toggle-icons .sun {
+#switch:checked+.toggle-icons .sun {
   transform: rotate(100deg);
 }
 
@@ -82,7 +82,7 @@ h2::selection {
   padding: 1rem;
 }
 
-.header-container > div {
+.header-container>div {
   margin-top: 1rem;
 }
 
@@ -162,6 +162,73 @@ h2::selection {
 /* Project 6 */
 .card:nth-child(6) {
   background: url(../assets/project/project-six.png) center center/cover;
+}
+
+.certificates {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.certificates-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.certificates-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.certificates-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.certificates-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.certificate-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.card-content span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #888;
 }
 
 /* Media Queries */
